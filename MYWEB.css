@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.load {
+    animation: slide 42s;
+}
+.slider {
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+width: 100%;
+height: 100vh;
+animation: slide 40s infinite;
+text-align: center;
+/* opacity: 0.8; */
+}
+.content{
+color:rgb(12, 12, 12);
+width: 100%;
+height: 100%;
+}
+.principal{
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%,-50%);
+ position: absolute;
+ background-color: black;
+ letter-spacing: 5px;
+ text-align: center;
+ 
+}
+.heading h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+.principal h1{
+    font-size: 70px;
+    margin-bottom: 20px;
+   
+}
+.principal p{
+font-size: 20px;
+}
+.infoPara{
+    color:white;
+}
+.w3-container{
+    border-radius: 18px;
+
+    opacity: 1;
+}
+body {
+    background-color: rgb(229, 250, 233);
+    background-image:url(background_image.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    color: white;
+}
+/* ############### defaults  ################################## */
+nav,
+header,
+footer {
+  display: block;
+}
+
+
+
+label {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+
+article p {
+  font-size: 35px;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.row::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+/* ############################ nav bar ###################################### */
+
+
+
+
+
+nav {
+    width: 100%;
+    margin: 0;
+  }
+  
+  nav ul {
+    background-color: #eee;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul.topnav li {
+    list-style: none;
+    float: left;
+  }
+  
+  ul.topnav li.topnav-right {
+    float: right;
+  }
+  
+  ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+  }
+  
+  ul.topnav li a:hover {
+    background-color: #0080ff;
+    color: #fff;
+  }
+  
+  ul.topnav li.dropdownIcon {
+    display: none;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 680px) {
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+      }
+      
+      ul.topnav li.dropdownIcon {
+        display: block;
+        float: right;
+      }
+      
+      ul.topnav.responsive li.dropdownIcon {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      
+      ul.topnav.responsive {
+        position: relative;
+      }
+      
+      ul.topnav.responsive li {
+        display: inline;
+        float: none; 
+      }
+      
+      ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+      }
+    }
+
+
+ body iframe{
+     width: 95%;
+     height: 100%;
+     margin-top: 55px;
+     margin-bottom: 60px;
+ }
+
+ div.col-6 button {
+  background-color: greenyellow;
+  border: none;
+  color: black;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 7%;
+}
+
+
+
+
+
+
+
+
+@keyframes slide {
+    0%{
+        background-image: url("s1.jpg");
+       
+    }
+    20%{
+        background-image: url("s2.jpg");
+       
+    }
+    20.01%{
+        background-image: url("s2.jpg");
+        
+         }
+    40%{
+        background-image: url("s3.jpg");
+        
+    }
+    40.01%{
+        background-image: url("s3.jpg");
+        
+    }
+    60%{
+        background-image: url("s5.jpeg");
+       
+    }
+    60.01%{
+        background-image: url("s5.jpeg");
+        
+    }
+    80%{
+      background-image: url("s6.jpg");
+    }
+
+        
+    80.01%{
+        background-image: url("s6.jpg");
+    }
+    100%{
+        background-image: url("s9.jpg");
+    }
+   
+    
+}
+.mainName{
+    padding-top: 30% ;
+    margin-left: 55%;
+    width:40%;
+    
+    mix-blend-mode: multiply;
+}
+
+
+/* ################# footer ######################### */
+footer.footsy {
+    background-color: #666;
+  }
+  
+  footer.footsy h1 {
+    color: #fff;
+    font-size: 30px;
+    text-align: left;
+  }
+  
+  footer.footsy ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+    padding-bottom: 20px ;
+
+    
+  }
+  
+  footer.footsy ul li {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgb(1, 26, 24);
+  
+   
+  }
+  
+
